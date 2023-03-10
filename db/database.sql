@@ -17,5 +17,7 @@ create table producto(
     primary key (id)
 );
 
+insert into administrador (usuario, contraseña) values ("yera", "123");
+
 select * from administrador;
 select * from producto;
