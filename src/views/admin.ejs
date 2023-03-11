@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="/scripts/process.js"></script>
-    <script src="/scripts/fetch.js"></script>
     <script src="/scripts/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="/Img/logo 2.0.png" type="image/x-icon">
 
@@ -28,12 +27,26 @@
         
         </div>
     </header>
+    <script>
+        function enviar() {
+        var user = document.getElementById("user").value;
+        var pass = document.getElementById("pass").value;
+      
+        const usuario = {
+          user,
+          pass,
+        };
+        fetch("http://localhost:3000/a")
+          .then(res => usuario)
+          .then(data => console.log(data));
+      }
+    </script>
     <div class="contentadmin">
-        <form method="post" enctype="multipart/form-data" action="/a" class="form1 p-4 border-4" style="background-color: #329b01bb; border-radius: 5px;margin: 27px;">
+        <form method="post" enctype="multipart/form-data" action="/login" class="form1 p-4 border-4" style="background-color: #329b01bb; border-radius: 5px;margin: 27px;">
             <img src="Img/user.png" alt="">
             <div class="mb-2 ">
               <label for="user" class="form-label text-light">Ingresa tu usuario</label>
-              <input name="user" type="email" class="form-control" id="user" aria-describedby="emailHelp" required>
+              <input name="user" type="text" class="form-control" id="user" aria-describedby="emailHelp" required>
             </div>
             <div class="mb-2">
               <label for="pass" class="form-label text-light">Ingresa tu contraseña</label>
