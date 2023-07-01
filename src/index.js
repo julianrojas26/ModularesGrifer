@@ -19,7 +19,7 @@ console.log("El servidor se esta ejecutando en el puerto localhost:3000");
 
 export function productos() {
 
-  fs.readFileSync("../../data/data.JSON", "utf-8", (e, data) => {
+  fs.readFileSync("src/data/data.json", "utf-8", (e, data) => {
     if (e) {
       console.log(e);
       return;

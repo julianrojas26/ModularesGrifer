@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { productos } from "../index";
+import { productos } from "../index.js";
 
 const router = Router();
 
@@ -23,7 +23,7 @@ router
   });
 
 router.get("/portafolio", (req, res) => {
-  productos
+  productos()
   res.render("portafolio");
 });
 
