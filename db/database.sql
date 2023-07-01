@@ -1,4 +1,4 @@
-create database ModularesGrifer;
+create database ModularesGrifercompradorcomprador;
 
 use ModularesGrifer;
 
