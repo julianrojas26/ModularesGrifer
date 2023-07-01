@@ -28,17 +28,42 @@ header h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 10px;
 }
-.bothead{
-    width: 40%;
+.nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+    height: 100px;
+    background-color: #ebebeb;
+    align-content: center;
 }
+.nav a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.admin_nav{
+    width: 60px;
+}
+
+
 .btn_nav{
-    font-size: larger;
-    padding: 15px;
-
+    background: linear-gradient(to top, #009e22 0%, #009e22 100%); /* Color de fondo inicial */
+    background-size: 100% 0; /* Tamaño inicial de la transición */
+    background-repeat: no-repeat;
+    transition: background-size 0.3s; /* Duración de la transición */
+    cursor: pointer;
+    width: 20%;
+    height: 100%;
+    padding-top: 35px;
+    text-align: center;
 }
-
+.btn_nav:hover {
+    background-size: 100% 100%; /* Tamaño final de la transición */
+    color: #ececec;
+  }
 .carousel-item img{
     width: 500px;
     height: 400px;
@@ -486,111 +511,35 @@ footer{
 
 
 
-.overlay{
-    background: rgba(0, 0, 0, .3);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-}
-.overlay.active{
-    visibility: visible;
-}
 
-.popup{
-    background: #ffffff;
-    box-shadow: 0px,0px,5px,0px rgba(0, 0, 0, .4);
-    border-radius: 10px;
-    height: 80%;
-    width: 60%;
-    padding: 10px;
-    
-}
-
-.popup .btn_cerrar_popup{
-    font-size: 16px;
-    line-height: 16px;
-    display: block;
-    text-align: right;
-    text-decoration: none;
-}
-
-
-.popup img{
-    width: 10%;
-}
-
-
-#pop_coc1 {
+.ima{
     width: 40%;
-    height: 40%;
-    margin: 10px;
-    border-radius: 10px;
-    border:1px solid rgb(187, 187, 187);
-}
-#pop_coc2 {
-    width: 30%;
-    height: 30%;
+    height: 200px;
     object-fit: cover;
-    margin: 10px;
-    border-radius: 10px;
-    border:1px solid rgb(187, 187, 187);
+    background-color: #1ACC14;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
-#pop_coc3 {
-    width: 25%;
-    height: 25%;
+
+.open_modal{
+    width: 220px;
+    height: 220px;
     object-fit: cover;
-    margin: 10px;
-    border-radius: 10px;
-    border:1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
 }
-#pop_coc4 {
-    width: 30%;
-    height: 30%;
+.open_modal:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.modal_img{
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    margin: 10px;
-    border-radius: 10px;
-    border:1px solid rgb(187, 187, 187);
+    margin: 15px 0px;
+    border-radius: 5px;
 }
-
-#pop_clos1 {
-    width: 30%;
-    height: 45%;
-    margin: 10px;
-    border-radius: 10px;
-    border:1px solid rgb(187, 187, 187);
-}
-#pop_clos2 {
-    width: 30%;
-    height: 40%;
-    margin: 10px;
-    border-radius: 10px;
-    border:1px solid rgb(187, 187, 187);
-}
-#pop_clos3 {
-    width: 30%;
-    height: 45%;
-    margin: 10px;
-    border-radius: 10px;
-    border:1px solid rgb(187, 187, 187);
-}
-#pop_clos4 {
-    width: 30%;
-    height: 40%;
-    margin: 10px;
-    border-radius: 10px;
-    border:1px solid rgb(187, 187, 187);
-}
-
-
-
-
-
 
 .cocina{
     width: 21%;
@@ -697,7 +646,7 @@ footer{
         background-color: #ebebeb;
         display: flex;
         justify-content: space-around;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
         color:rgb(0, 0, 0);
         width: 100%;
@@ -716,12 +665,22 @@ footer{
         margin: auto;
     }
     .log img{
+        width: 120%;
+    }
+    .nav{
         width: 100%;
+        justify-content: space-around;
+        padding-bottom: 10px;
+    }
+    .carousel-item img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
     }
 
 
     #Prom{
-        width: 80%;
+        width: 70%;
     }
 
     .btn_nav{

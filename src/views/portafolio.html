@@ -20,17 +20,18 @@
 <body>
     <header>
         <div class="log">
-            <img src="../public/Img/logo 2.0.png" alt="Logo">
-            <h1 class="fw-bold">Modulares <br> Grifer</h1>
+            <img src="../public/Img/ID_CORP/logo 2.0.png" alt="Logo">
+            <h2 class="fw-bold">Modulares <br> Grifer</h1>
         </div>
-        <div class="bothead">
-        <a href="index.html"><li class="btn_nav btn btn-outline-success border-2 ">Home</li></a>
-        <a href="nosotros.html"><li class="btn_nav btn btn-outline-success border-2">Nosotros</li></a>
-        <a href=""><li class="btn_nav btn btn-outline-success border-2">Portafolio</li></a>
-        <a href="contacto.html"><li class="btn_nav btn btn-outline-success border-2">Contacto</li></a>
-<!--         <a href="admin.html"><li class="btn btn-outline-success border-2">Admin</li></a>
- -->
-        </div>
+        <div class="nav">
+            <a class="btn_nav" href="index.html">Home</a>
+            <a class="btn_nav" href="Nosotros.html">Nosotros</a>
+            <a class="btn_nav" href="portafolio.html">Portafolio</a>
+            <a class="btn_nav" href="contacto.html"><span>Contacto</span></a>
+      </div>
+      <div class="admin_nav">
+        <a href="admin.html"><li class="btn btn-outline-success border-2">Admin</li></a>
+      </div>
     </header>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PG7H7JFGR5"></script>
@@ -45,70 +46,45 @@
     <div class="porContent">
         <h2 class="titles fw-bold">Cocinas</h2>
         <div class="order-product">
-            <div class="ima">
-                <img id="open_coc1" src="../public/Img/COCINAS/Grupo1/Team_1 (3).jpeg" alt="">
-                    <div class="overlay" id="cocina1">
-                        <div class="popup" id="popup_cocina1">
-                            <a href="#" id="btn_cerrar_popup" class="btn_cerrar_popup"><img style="width:2%; border: 0px solid white; " src="../public/Img/cerrar.png" alt=""></a>
-                                <img id="pop_coc1" src="../public/Img/COCINAS/Grupo1/Team_1 (1).jpeg" alt="">
-                                <img id="pop_coc1" src="../public/Img/COCINAS/Grupo1/Team_1 (2).jpeg" alt="">
-                                <img id="pop_coc1" src="../public/Img/COCINAS/Grupo1/Team_1 (3).jpeg" alt="">
-                                <img id="pop_coc1" src="../public/Img/COCINAS/Grupo1/Team_1 (4).jpeg" alt="">
+            <div data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img class="open_modal" src="../public/Img/COCINAS/Grupo1/Team_1 (3).jpeg" alt="">
+                      <!-- Modal -->
+                    <div class="modal fade  " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Cocina 1</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="d-flex justify-content-around align-items-center">  
+                                <img class="modal_img" src="../public/Img/COCINAS/Grupo1/Team_1 (1).jpeg" alt="">
+                                <img class="modal_img" src="../public/Img/COCINAS/Grupo1/Team_1 (2).jpeg" alt="">
                             </div>
-            </div>
-        </div>
-    
-            <div class="ima">
-                <img id="open_coc2" src="../public/Img/COCINAS/Grupo2/Team_2 (1).jpeg" alt="">
-    
-                <div class="overlay" id="cocina2">
-                    <div class="popup" id="popup_cocina2">
-                        <a href="#" id="btn_cerrar_popup2" class="btn_cerrar_popup"><img style="width:2%; border: 0px solid white; " src="../public/Img/cerrar.png" alt=""></a>
-                            <img id="pop_coc2" src="../public/Img/COCINAS/Grupo2/Team_2 (1).jpeg" alt="">
-                            <img id="pop_coc2" src="../public/Img/COCINAS/Grupo2/Team_2 (2).jpeg" alt="">
-                            <img id="pop_coc2" src="../public/Img/COCINAS/Grupo2/Team_2 (3).jpeg" alt="">
-                            <img id="pop_coc2" src="../public/Img/COCINAS/Grupo2/Team_2 (4).jpeg" alt="">
-                            <img id="pop_coc2" src="../public/Img/COCINAS/Grupo2/Team_2 (5).jpeg" alt="">
-    
+                            <div class="d-flex justify-content-around">
+                                <img class="modal_img" src="../public/Img/COCINAS/Grupo1/Team_1 (3).jpeg" alt="">
+                                <img class="modal_img" src="../public/Img/COCINAS/Grupo1/Team_1 (4).jpeg" alt="">                     
+                            </div>
+                          </div>
                         </div>
-                </div>
-            </div>
-            <div class="ima">
-                <img id="open_coc3" src="../public/Img/COCINAS/Grupo3/Team_3 (2).jpeg" alt="">
-            
-                <div class="overlay" id="cocina3">
-                    <div class="popup" id="popup_cocina3">
-                        <a href="#" id="btn_cerrar_popup3" class="btn_cerrar_popup"><img style="width:2%; border: 0px solid white; " src="../public/Img/cerrar.png" alt=""></a>
-                            <img id="pop_coc3" src="../public/Img/COCINAS/Grupo3/Team_3 (1).jpeg" alt="">
-                            <img id="pop_coc3" src="../public/Img/COCINAS/Grupo3/Team_3 (2).jpeg" alt="">
-                            <img id="pop_coc3" src="../public/Img/COCINAS/Grupo3/Team_3 (3).jpeg" alt="">
-                            <img id="pop_coc3" src="../public/Img/COCINAS/Grupo3/Team_3 (4).jpeg" alt="">
-                            <img id="pop_coc3" src="../public/Img/COCINAS/Grupo3/Team_3 (5).jpeg" alt="">   
-                            <img id="pop_coc3" src="../public/Img/COCINAS/Grupo3/Team_3 (6).jpeg" alt="">   
-                            <img id="pop_coc3" src="../public/Img/COCINAS/Grupo3/Team_3 (7).jpeg" alt="">   
-                            <img id="pop_coc3" src="../public/Img/COCINAS/Grupo3/Team_3 (8).jpeg" alt="">   
-                        </div>
+                      </div>
+                    </div>
+                
                 </div>
     
-            
-            </div>
-            <div class="ima">   
-                <img id="open_coc4" src="../public/Img/COCINAS/Grupo4/Team_4 (1).jpeg" alt="">
-                <div class="overlay" id="cocina4">
-                    <div class="popup" id="popup_cocina4">
-                        <a href="#" id="btn_cerrar_popup4" class="btn_cerrar_popup"><img style="width:2%; border: 0px solid white; " src="../public/Img/cerrar.png" alt=""></a>
-                            <img id="pop_coc4" src="../public/Img/COCINAS/Grupo4/Team_4 (1).jpeg" alt="">
-                            <img id="pop_coc4" src="../public/Img/COCINAS/Grupo4/Team_4 (2).jpeg" alt="">
-                            <img id="pop_coc4" src="../public/Img/COCINAS/Grupo4/Team_4 (3).jpeg" alt="">
-                            <img id="pop_coc4" src="../public/Img/COCINAS/Grupo4/Team_4 (4).jpeg" alt="">
-                            <img id="pop_coc4" src="../public/Img/COCINAS/Grupo4/Team_4 (5).jpeg" alt="">   
-                            <img id="pop_coc4" src="../public/Img/COCINAS/Grupo4/Team_4 (6).jpeg" alt="">   
-    
-                        </div>
+                <div class="">
+                    <img class="open_modal" src="Img/cocina2.webp" alt="">
+                
                 </div>
-            
+                <div class="">
+                    <img class="open_modal" src="Img/cocina3.png" alt="">
+                
+                </div>
+                <div class="">   
+                    <img class="open_modal" src="Img/cocina4.png" alt="">
+                
+                </div>
             </div>
-        </div>
 
         <div class="moreboxes">
             <div class="cocina">
