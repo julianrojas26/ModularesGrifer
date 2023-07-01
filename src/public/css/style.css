@@ -39,6 +39,18 @@ header h1{
 
 }
 
+.carousel-item img{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.modal_img{
+    width: 20%;
+    height: 100px;
+    object-fit: cover;
+}
 
 
 .log{
@@ -878,6 +890,5 @@ footer{
     }
 
     /* portafolio */
-
 
 }
